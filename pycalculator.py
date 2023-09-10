@@ -12,7 +12,10 @@ while True:
 	if operation == '/':
 		number1 = input("number 1 please:")
 		number2 = input("number 2 please:")
-		res = number1 / number2
+		try:
+			res = number1 / number2
+		except:
+			res = "NaN"
 	if operation == '*':
 		number1 = input("number 1 please:")
 		number2 = input("number 2 please:")
