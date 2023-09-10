@@ -3,7 +3,7 @@
 # alarm at interval
 import time
 seconds = int(input("Time Interval - Seconds "))
-time-to-sleep = 1
+time_to_sleep = 1
 s = seconds
 while True:
 	s = seconds
@@ -11,4 +11,4 @@ while True:
 		time.sleep(1)
 		s -= 1
 	print("Time for break!!!")
-	time.sleep(time-to-sleep)
+	time.sleep(time_to_sleep)
