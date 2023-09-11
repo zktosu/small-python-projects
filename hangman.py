@@ -5,7 +5,7 @@ word = random.sample(words,1)[0]
 res = "-"*len(word)
 guesses = 5
 while guesses>0:
-	letters = input("Enter a letter:")
+	letters = input("Enter letters to look for:")
 	guesses -= 1
 	res = ""
 	for i in word:
@@ -14,10 +14,10 @@ while guesses>0:
 		else:
 			res += "-"
 	print(res)
-	print("Remaining guesses %d"%guesses)
 	if set(word) == set(res):
 		print("Well Done!")
 		break
+	print("Remaining guesses %d"%guesses)
 if guesses <= 0:
 	print(word)
 	print("Failed")
