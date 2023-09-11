@@ -1,6 +1,6 @@
 import random
-# words = ["sample","life","boring","stuff","member"]
-words = ["sample"]
+words = ["sample","life","boring","stuff","member"]
+# words = ["sample"]
 word = random.sample(words,1)[0]
 res = "-"*len(word)
 while True:
