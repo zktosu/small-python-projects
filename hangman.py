@@ -19,4 +19,5 @@ while guesses>0:
 		print("Well Done!")
 		break
 if guesses <= 0:
+	print(word)
 	print("Failed")
