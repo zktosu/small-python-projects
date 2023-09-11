@@ -6,7 +6,6 @@ res = "-"*len(word)
 guesses = 5
 while guesses>0:
 	letters = input("Enter letters to look for:")
-	guesses -= 1
 	res = ""
 	for i in word:
 		if i in letters:
@@ -18,6 +17,7 @@ while guesses>0:
 		print("Well Done!")
 		break
 	print("Remaining guesses %d"%guesses)
+	guesses -= 1
 if guesses <= 0:
 	print(word)
 	print("Failed")
