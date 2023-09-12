@@ -7,6 +7,13 @@
 word = "award"
 dword = "-"*len(word)
 guessed_letters = ""
+def update_word():
+	global word
+	global dword
+	global guessed_letters
+	word = "anotherword"
+	dword = "-"*len(word)
+	guessed_letters = ""
 while True:
 	print(dword)
 	letter = input("Give me a letter: ")
@@ -18,9 +25,11 @@ while True:
 		if letter == word[i]:
 			# this is the way to replace dash with letter
 			dword = dword[:i] + letter + dword[i+1:]
+	# this doesn't work.
+	# because 
 	if len(guessed_letters) == 5:
 		print("You have used all guesses")
 		break
 	if dword == word:
 		print("Well Done!")
-		
+		update_word()
