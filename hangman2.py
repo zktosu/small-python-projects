@@ -27,7 +27,7 @@ while True:
 			dword = dword[:i] + letter + dword[i+1:]
 	# this doesn't work.
 	# because 
-	if len(guessed_letters) == 5:
+	if len(guessed_letters) == len(word):
 		print("You have used all guesses")
 		break
 	if dword == word:
