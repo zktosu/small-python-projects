@@ -28,12 +28,12 @@ while True:
 		if letter == word[i]:
 			# this is the way to replace dash with letter
 			dword = dword[:i] + letter + dword[i+1:]
-	# this doesn't work.
-	# because 
 	if dword == word:
 		print("Well Done!")
 		print(dword)
 		update_word()
+	# this needs to be replaced with geniune solution
+	# wrong gusses need to be counted
 	if len(guessed_letters) == len(word):
 		print("You have used all guesses")
 		break
