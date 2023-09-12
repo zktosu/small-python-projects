@@ -4,14 +4,17 @@
 # add letter to guessed letters list
 # update dashed word. replace - for correct letters.
 # loop
-word = "award"
+import random
+words = ["word","life","another","member","other"]
+word = random.sample(words,1)[0]
 dword = "-"*len(word)
 guessed_letters = ""
 def update_word():
+	global words
 	global word
 	global dword
 	global guessed_letters
-	word = "anotherword"
+	word = random.sample(words,1)[0]
 	dword = "-"*len(word)
 	guessed_letters = ""
 while True:
@@ -27,9 +30,11 @@ while True:
 			dword = dword[:i] + letter + dword[i+1:]
 	# this doesn't work.
 	# because 
+	if dword == word:
+		print("Well Done!")
+		print(dword)
+		update_word()
 	if len(guessed_letters) == len(word):
 		print("You have used all guesses")
 		break
-	if dword == word:
-		print("Well Done!")
-		update_word()
+
