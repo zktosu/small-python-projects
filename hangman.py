@@ -16,7 +16,7 @@ while guesses>0:
 	if set(word) == set(res):
 		print("Well Done!")
 		break
-	print("Remaining guesses %d"%guesses)
+	print("Remaining guesses %d"%(guesses-1))
 	guesses -= 1
 if guesses <= 0:
 	print(word)
