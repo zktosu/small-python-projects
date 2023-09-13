@@ -18,6 +18,7 @@ def update_word():
 	dword = "-"*len(word)
 	guessed_letters = ""
 while True:
+	print(word)
 	print(dword)
 	letter = input("Give me a letter: ")
 	if len(letter) != 1 or letter in guessed_letters:
