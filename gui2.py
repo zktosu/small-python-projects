@@ -1,3 +1,4 @@
+import sys
 from PySide6.QtWidgets import QApplication, QPushButton,QMainWindow
 
 class Butoner(QMainWindow):
@@ -8,7 +9,7 @@ class Butoner(QMainWindow):
 		self.setCentralWidget(self.button)
 
 if __name__ == "__main__":
-	app = QApplication()
+	app = QApplication(sys.argv)
 	root = Butoner()
 	root.show()
 	app.exec()
